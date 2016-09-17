@@ -9,8 +9,46 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="eu.dziadosz.basicuicontrols.MainActivity">
 
-    <TextView
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meatballs_text"
+            android:checked="true"
+            android:id="@+id/radio0" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chicken_text"
+            android:id="@+id/radio1" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fish_text"
+            android:id="@+id/radio2" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/steak_text"
+            android:id="@+id/radio3" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carrots_text"
+            android:id="@+id/radio4" />
+    </RadioGroup>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="@string/select"
+        android:id="@+id/button"
+        android:onClick="selectButtonClicked"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
